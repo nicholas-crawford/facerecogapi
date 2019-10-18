@@ -38,7 +38,7 @@ app.put('/image', (req, res) => { image.handleImage(req, res, postgresDB) })
 
 app.post('/imageurl', (req, res) => { image.handleApiCall(req, res) })
 
-app.listen(3000, ()=> {
-    console.log('Running in the 3000s');
+app.listen(process.env.PORT || 3000, ()=> {
+    console.log(`Running in the ${process.env.PORT}`);
 })
 
