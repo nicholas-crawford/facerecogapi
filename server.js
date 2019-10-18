@@ -12,7 +12,7 @@ const image = require('./controllers/image');
 const postgresDB = knex({
     client: 'pg',
     connection: {
-      host : '127.0.0.1',
+      host : 'postgresql-perpendicular-28784',
       user : 'postgres',
       password : 'test',
       database : 'faceRecogDB'
